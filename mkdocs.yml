@@ -9,8 +9,6 @@ site_author: lan-kehan
 copyright: lan-kehan
 
 nav:
-  # 主页
-  - Home: index.md 
   # 工具使用/技术记录
   - Cheat: 
     - section1/git.md
