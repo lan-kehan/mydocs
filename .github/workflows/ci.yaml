@@ -29,7 +29,9 @@ jobs:
       - run: mkdocs build
       - name: Verify public entry points
         run: |
-          test ! -e site/index.html
+          test -f site/index.html
+          grep -q 'Kehan LAN' site/index.html
+          grep -q 'y2k-home' site/index.html
           test -f site/cv/index.html
           grep -q 'khlan_s_resume.pdf' site/cv/index.html
           grep -q 'G-T9MWFJSM3X' site/cv/index.html

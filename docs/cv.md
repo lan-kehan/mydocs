@@ -8,18 +8,26 @@ hide:
 
 # Curriculum Vitae
 
+<p class="cv-file-meta">
+  <span>FILE 01</span>
+  <span>UPDATED DOCUMENT</span>
+  <span>PDF · A4</span>
+</p>
+
+<p class="cv-lede">One click in, the full document is ready to read.</p>
+
 <div class="cv-actions">
   <a
     class="md-button md-button--primary"
     href="../khlan_s_resume.pdf"
     target="_blank"
     rel="noopener"
-  >Open PDF</a>
+  >Open PDF ↗</a>
   <a
     class="md-button"
     href="../khlan_s_resume.pdf"
     download
-  >Download</a>
+  >Download ↓</a>
 </div>
 
 <div class="cv-viewer">

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Kehan LAN star</title>
+  <defs>
+    <linearGradient id="chrome" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dfff55"/>
+      <stop offset="0.42" stop-color="#53ddff"/>
+      <stop offset="0.74" stop-color="#9d7bff"/>
+      <stop offset="1" stop-color="#ff4fc3"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#f8fbff" stroke="#111326" stroke-width="3"/>
+  <path d="M32 7c2.1 15.7 9.3 22.9 25 25-15.7 2.1-22.9 9.3-25 25-2.1-15.7-9.3-22.9-25-25 15.7-2.1 22.9-9.3 25-25Z" fill="url(#chrome)" stroke="#111326" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="5" fill="#111326"/>
+</svg>

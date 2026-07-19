@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         headerTitle.addEventListener('click', function(e) {
             // 如果点击的不是按钮，则跳转到主页
             if (!e.target.closest('.md-header__button')) {
-                // 获取网站的根URL
-                const siteUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.origin;
-                window.location.href = siteUrl;
+                window.location.href = new URL('/', window.location.origin).href;
             }
         });
         

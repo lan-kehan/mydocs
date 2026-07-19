@@ -1,12 +1,12 @@
 # 项目设置
-site_name: Lan's Blog
+site_name: Kehan LAN
 site_url: https://lan-kehan.github.io/
 repo_url: https://github.com/lan-kehan/lan-kehan.github.io
 repo_name: lan-kehan/lan-kehan.github.io
 edit_uri: blob/main/docs/
-site_description: site description
-site_author: lan-kehan
-copyright: lan-kehan
+site_description: Kehan LAN — VLMs, generative models, films, and indie music.
+site_author: Kehan LAN
+copyright: Kehan LAN
 
 extra:
   analytics:
@@ -14,19 +14,20 @@ extra:
     property: G-T9MWFJSM3X
 
 nav:
+  - Home: index.md
   - CV: cv.md
   # 工具使用/技术记录
-  - Cheat: 
+  - Toolbox:
     - section1/git.md
     - section1/linux.md
     - section1/docker.md
   # 课程笔记/资料整理
-  - Notes:
+  - Study Notes:
     - section2/24-fall-C-programming.md
     - section2/LeetCode.md
     - section2/RL4LLM.md
   # 论文阅读
-  - Reviews:
+  - Research:
     - section3/论文精读-SAMWISE.md
     - section3/论文精读-GLUS.md
     - section3/论文精读-SegAgent.md
@@ -34,37 +35,17 @@ nav:
     - section3/论文精读-Seg-R1.md
     - section3/论文精读-SegZero.md
   # 随笔/影评，乐评
-  - Others:
+  - After Hours:
     - section4/index.md
 
 theme:
   name: material
-  # logo: assets/zjusct.svg
-  # favicon: assets/zjusct-hpc101.svg
+  logo: assets/y2k-star.svg
+  favicon: assets/y2k-star.svg
   palette:
-    # 浅色主题
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/brightness-7
-        name: 切换至深色主题
-    # 深色主题
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/brightness-4
-        name: 切换至科技风主题
-    # 科技风主题
-    - scheme: tmp
-      primary: cyan
-      accent: pink
-      toggle:
-        icon: material/ghost
-        name: 切换至浅色主题
+    scheme: y2k
+    primary: custom
+    accent: custom
   features:
     # 代码块操作
     - content.code.copy
@@ -74,6 +55,7 @@ theme:
     - navigation.footer
     # 顶部导航
     - navigation.tabs
+    - navigation.tabs.sticky
     # 侧边栏按 section 展开
     - navigation.sections
     - navigation.expand
@@ -86,8 +68,6 @@ theme:
     # 回到顶部
     - navigation.top
     - toc.follow
-    # 页面编辑
-    - content.action.edit
     # 搜索
     - search.suggest
     - search.highlight

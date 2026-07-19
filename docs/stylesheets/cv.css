@@ -1,19 +1,70 @@
+.cv-file-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: -0.55rem 0 0.85rem;
+}
+
+.cv-file-meta span {
+  padding: 0.22rem 0.48rem;
+  color: var(--y2k-ink);
+  font-family: var(--md-code-font);
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  background: var(--y2k-lime);
+  border: 1px solid var(--y2k-ink);
+  border-radius: 0.3rem;
+}
+
+.cv-file-meta span:nth-child(2) {
+  background: var(--y2k-blue);
+}
+
+.cv-file-meta span:nth-child(3) {
+  background: #ffd1ed;
+}
+
+.cv-lede {
+  margin: 0 0 1rem;
+  color: var(--md-default-fg-color--light);
+}
+
 .cv-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin: 0 0 1rem;
+  margin: 0 0 1.15rem;
 }
 
 .cv-viewer {
+  position: relative;
   width: 100%;
-  height: calc(100vh - 12rem);
+  height: calc(100vh - 14rem);
   min-height: 680px;
   overflow: hidden;
-  background: var(--md-default-bg-color);
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.4rem;
-  box-shadow: var(--md-shadow-z1);
+  background: var(--y2k-silver);
+  border: 2px solid var(--y2k-ink);
+  border-radius: 0.9rem;
+  box-shadow: 8px 8px 0 var(--y2k-pink), 10px 10px 0 var(--y2k-ink);
+}
+
+.cv-viewer::before {
+  position: absolute;
+  top: 0.42rem;
+  left: 0.55rem;
+  z-index: 2;
+  padding: 0.16rem 0.38rem;
+  color: var(--y2k-ink);
+  font-family: var(--md-code-font);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  content: "DOCUMENT VIEWER";
+  background: rgba(248, 251, 255, 0.85);
+  border: 1px solid var(--y2k-ink);
+  border-radius: 0.25rem;
+  pointer-events: none;
 }
 
 .cv-viewer iframe {
@@ -24,9 +75,10 @@
 }
 
 .cv-fallback {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   color: var(--md-default-fg-color--light);
-  font-size: 0.75rem;
+  font-family: var(--md-code-font);
+  font-size: 0.62rem;
 }
 
 @media screen and (max-width: 44.984375em) {
@@ -41,7 +93,9 @@
   }
 
   .cv-viewer {
-    height: calc(100vh - 11rem);
+    height: calc(100vh - 13rem);
     min-height: 560px;
+    border-radius: 0.65rem;
+    box-shadow: 5px 5px 0 var(--y2k-pink), 7px 7px 0 var(--y2k-ink);
   }
 }
