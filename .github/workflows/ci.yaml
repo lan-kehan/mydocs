@@ -32,6 +32,8 @@ jobs:
           test -f site/index.html
           grep -q 'Kehan LAN' site/index.html
           grep -q 'y2k-home' site/index.html
+          grep -q 'stylesheets/theme-y2k.css' site/index.html
+          test -f site/stylesheets/theme-y2k.css
           test -f site/cv/index.html
           grep -q 'khlan_s_resume.pdf' site/cv/index.html
           grep -q 'G-T9MWFJSM3X' site/cv/index.html

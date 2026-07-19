@@ -137,9 +137,9 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 
 extra_css:
-  - stylesheets/fonts.css
-  - stylesheets/theme.css
-  - stylesheets/cv.css
+  - stylesheets/fonts-y2k.css
+  - stylesheets/theme-y2k.css
+  - stylesheets/cv-y2k.css
   # neoteroi
   - stylesheets/neoteroi-v1.1.2.css
 
