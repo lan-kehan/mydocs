@@ -8,7 +8,13 @@ site_description: site description
 site_author: lan-kehan
 copyright: lan-kehan
 
+extra:
+  analytics:
+    provider: google
+    property: G-T9MWFJSM3X
+
 nav:
+  - CV: cv.md
   # 工具使用/技术记录
   - Cheat: 
     - section1/git.md
@@ -153,6 +159,7 @@ extra_javascript:
 extra_css:
   - stylesheets/fonts.css
   - stylesheets/theme.css
+  - stylesheets/cv.css
   # neoteroi
   - stylesheets/neoteroi-v1.1.2.css
 

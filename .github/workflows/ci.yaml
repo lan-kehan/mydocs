@@ -30,6 +30,9 @@ jobs:
       - name: Verify public entry points
         run: |
           test ! -e site/index.html
+          test -f site/cv/index.html
+          grep -q 'khlan_s_resume.pdf' site/cv/index.html
+          grep -q 'G-T9MWFJSM3X' site/cv/index.html
           cmp docs/khlan_s_resume.pdf site/khlan_s_resume.pdf
       - run: mkdocs gh-deploy --force
       - name: Debug build
